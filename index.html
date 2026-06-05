@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Czesko-polskie flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.svg" alt="Logo" class="logo">
+    </a>
+  </header>
+
+  <main class="scroll-section">
+    <div class="card-pack">
+      <img src="images/T1.png" alt="Karta 1" class="photo-card card-1">
+      <img src="images/T2.png" alt="Karta 2" class="photo-card card-2">
+      <img src="images/T3.png" alt="Karta 3" class="photo-card card-3">
+      <img src="images/T4.png" alt="Karta 4" class="photo-card card-4">
+    </div>
+  </main>
+
+  <section class="title-section">
+    <h2>Pierwsze czysto czesko-polskie flashcards</h2>
+
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th>Dlaczego warto spróbować?</th>
+          <th>Co znajdziesz na stronie?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Uczysz się praktycznych słów, których naprawdę użyjesz</td>
+          <td>Fiszki CZ ↔ PL</td>
+        </tr>
+        <tr>
+          <td>Nie tracisz czasu na długą naukę</td>
+          <td>Krótkie lekcje na kilka minut</td>
+        </tr>
+        <tr>
+          <td>Powtarzasz tylko to, czego potrzebujesz</td>
+          <td>Inteligentny system powtórek</td>
+        </tr>
+        <tr>
+          <td>Widzisz swoje postępy</td>
+          <td>Statystyki i wyniki</td>
+        </tr>
+        <tr>
+          <td>Możesz uczyć się w dowolnym momencie</td>
+          <td>Wersja mobilna i desktopowa</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="try-button" id="open-flashcards" type="button">
+      Zacznij ćwiczyć
+    </button>
+  </section>
+
+  <section id="flashcards" class="flashcards-section">
+    <h2>Flashcards</h2>
+
+    <div class="flashcards-box">
+      <button class="flashcard" id="flashcard-button" type="button">
+        <span class="flashcard-word" id="flashcard-word">Dobrý den</span>
+      </button>
+    </div>
+
+    <p class="flashcard-counter" id="flashcard-counter">1/50</p>
+
+    <div class="flashcard-controls">
+      <button id="prev-card" class="flashcard-nav" type="button">Wstecz</button>
+      <button id="next-card" class="flashcard-nav" type="button">Dalej</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
